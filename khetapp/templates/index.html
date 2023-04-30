@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Fruits Lover|Welcome</title>
+	
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+<div class="main_container" id="home">
+	
+	<div class="navbar">
+		<div class="logo">
+			<a href="#">DESIGN LIKE YOU DESIRE</a>
+		</div>
+		<div class="navbar_items">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li class="dropdown">
+					<a href="">Category</a>
+					<ol>
+						<li><a href="{% url 'price' %}">Apple</a></li>
+						<li><a href="{% url 'price' %}">Banana</a></li>
+						<li><a href="{% url 'price' %}">Orange</a></li>
+						<li><a href="{% url 'price' %}">Guava</a></li>
+					</ol>
+				</li>
+				<li><a href="{% url 'service' %}">Awards</a></li>
+				<li><a href="{% url 'contact' %}">Contact us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="b_image">
+		<div class="b_content">
+			<h1>We Provide the Best Landscape Design.<br> <span>Fall In Love With Your Place Again.<span></h1>
+			<p>Providing Innovation and Human-Centered Landscaping and Interior Design Services.</p>
+		</div>	
+	</div>
+
+	<div class="about" id="about">
+		<h1 class="title">About Esthetic Planners</h1>
+		<p>Esthetic Planners is one of the leading landscaping and Interior design services firms with projects focused in the Tricity region, including Zirakpur, Kapurthala, Jalandhar, and Ludhiana. We strive to achieve ‘best in class’ in deliverables, and we focus not only on product and service quality but also on the medians to accomplish it.
+		</p>	
+		<br>
+		<p>
+		We are a team of professional, energetic, and talented designers available to guide our client’s through the flawless and timely execution of any residential, commercial and industrial design project.
+		</p>
+		
+	</div>
+	
+	<div class="gallery">
+		<img src="../static/media/apple.png" alt="">
+		<img src="../static/media/Adobe Scan 09-Apr-2023 (1)_1.jpg" alt="">
+		<img src="../static/media/apple.png" alt="">
+		<img src="../static/media/apple.png" alt="">
+	</div>
+</div>	
+	
+</body>
+</html>

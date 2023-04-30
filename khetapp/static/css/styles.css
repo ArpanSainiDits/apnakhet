@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Allura|Josefin+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+h1.title {
+  margin-bottom: 20px;
+  color: #444444;
+  font-family: "Allura", cursive;
+  text-transform: uppercase;
+  font-size: 38px;
+  word-spacing: 25px;
+  letter-spacing: 5px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #a9a9a9;
+}
+
+.btn a {
+  width: 180px;
+  height: 35px;
+  line-height: 35px;
+  border: 2px solid #f3196c;
+  color: #f3196c;
+  display: block;
+  margin: 25px auto 0;
+  text-align: center;
+}
+
+.main_container {
+  position: relative;
+}
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo a {
+  font-family: "Allura", cursive;
+  font-size: 32px;
+  color: #f3196c;
+}
+
+.navbar_items ul {
+  display: flex;
+}
+
+.navbar_items ul li {
+  margin: 0 25px;
+}
+
+.navbar_items ul li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+.navbar_items ul li a:hover {
+  color: rgb(71, 185, 136);
+}
+.navbar_items ul li.dropdown {
+  position: relative;
+}
+.navbar_items ul li.dropdown:hover ol {
+  display: block;
+}
+.navbar_items ul li.dropdown:hover::before {
+  border-top-color: rgb(71, 185, 136);
+}
+.navbar_items ul li.dropdown::before {
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #fff;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navbar_items ul li.dropdown ol {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  display: none;
+}
+.navbar_items ul li.dropdown ol li{
+
+  margin: 0;
+}
+.navbar_items ul li.dropdown ol li a {
+  color: #000;
+  font-size: 14px;
+  padding: 15px 20px;
+  border-bottom:1px solid #e3e3e3;
+  display: block;
+}
+.navbar_items ul li.dropdown ol li:hover {
+  background-color: #e3e3e3;
+}
+.navbar_items ul li.dropdown ol li:last-child a{
+  border: none;
+}
+/* banner_image */
+.b_image {
+  background: url("../media/PXL_20211104_052721633.jpg") no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p_image {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/pric.jpg");
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.s_image {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/home-services.jpg");
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.c_image {
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/contact.jpg");
+  height: 400px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.b_content {
+  text-align: center;
+  color: #fff;
+}
+
+.b_content h1 {
+  text-transform: uppercase;
+  line-height: 38px;
+  margin-bottom: 15px;
+}
+
+.b_content h1 span {
+  color: #f3196c;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 5% 10%;
+  position: relative;
+}
+.about::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("../media/images/PXL_20211104_052721633.jpg");
+  opacity: .3;
+  background-size: cover;
+}
+
+@media (max-width: 720px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 25px;
+  }
+
+  .navbar_items ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar_items ul li {
+    margin-bottom: 5px;
+  }
+
+  ._content {
+    margin-top: 35px;
+  }
+}
+.contactus {
+  position: relative;
+  padding: 0 0 30px;
+}
+.contactus::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/home_bot.jpg");
+  opacity: .2;
+  background-size: cover;
+}
+.contactus ul {
+  margin: 0;
+  padding:0;
+  text-align: center;
+}
+.contactus ul li {
+  font-size: 18px;
+  color: #000;
+  padding: 10px 0;
+}
+.contactus ul li span {
+  font-weight: 600;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 25%;
+  height: 400px;
+  object-fit: contain;
+  padding: 15px;
+}
+@media (max-width:767px) {
+  .gallery img {
+    width: 50%;
+  }
+}
+@media (max-width:575px) {
+  .gallery img {
+    width: 100%;
+  }
+}

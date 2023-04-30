@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <script
+      src="https://kit.fontawesome.com/75c1adf2b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>contact</title>
+  </head>
+  <body>
+    <!-- the header -->
+    <div class="main_container" id="home">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">DESIGN LIKE YOU DESIRE</a>
+        </div>
+        <div class="navbar_items">
+          <ul>
+            <li><a href="{% url 'desktop' %}">Home</a></li>
+            <li class="dropdown">
+					<a href="">Category</a>
+					<ol>
+						<li><a href="{% url 'price' %}">Apple</a></li>
+						<li><a href="{% url 'price' %}">Banana</a></li>
+						<li><a href="{% url 'price' %}">Orange</a></li>
+						<li><a href="{% url 'price' %}">Guava</a></li>
+					</ol>
+				</li>
+            <li><a href="{% url 'service' %}">Awards</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="b_image c_image">
+        <div class="b_content">
+          <h1>Contact Us</h1>
+        </div>	
+      </div>
+      <div class="contactus" id="contactus">
+        <h1 class="title">Get in Touch</h1>
+        <ul>
+          <li>Name - <span>Arpan Saini</span></li>
+          <li>Mobile - <span>123466789</span></li>
+          <li>Address - <span>3b2 Mohali, Punjab</span></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

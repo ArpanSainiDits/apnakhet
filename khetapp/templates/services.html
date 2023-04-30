@@ -1,0 +1,101 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/pricing.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+    <script
+      src="https://kit.fontawesome.com/75c1adf2b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Services</title>
+  </head>
+  <body>
+    <!-- the header -->
+    <!-- the header -->
+    <div class="main_container" id="home">
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">DESIGN LIKE YOU DESIRE</a>
+        </div>
+        <div class="navbar_items">
+          <ul>
+            <li><a href="{% url 'desktop' %}">Home</a></li>
+            <li class="dropdown">
+					<a href="">Category</a>
+					<ol>
+						<li><a href="{% url 'price' %}">Apple</a></li>
+						<li><a href="{% url 'price' %}">Banana</a></li>
+						<li><a href="{% url 'price' %}">Orange</a></li>
+						<li><a href="{% url 'price' %}">Guava</a></li>
+					</ol>
+				</li>
+            <li><a href="#">Awards</a></li>
+            <li><a href="{% url 'contact' %}">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="b_image s_image">
+        <div class="b_content">
+          <h1>Service</h1>
+        </div>	
+      </div>
+      <div class="two_column_service">
+        
+        <div class="left_wrapper">
+          <h2>Sugarcane</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque soluta cupiditate commodi natus obcaecati mollitia debitis repellat adipisci eum. Illo eveniet pariatur autem aut eligendi officia? Explicabo, magni aut!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem quaerat voluptates officia reiciendis, eum suscipit fugiat soluta vitae omnis maxime magni molestiae dolores cum mollitia provident assumenda vero eos!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, ad sequi magni unde id nisi! Incidunt rem ipsam earum suscipit, distinctio assumenda vitae porro officia, laboriosam tempora a neque voluptas!</p>
+        </div>
+        <div class="right_wrapper">
+          <img src="../static/media/xcbx.jpg" alt="">
+        </div>
+      </div>
+      <div class="two_column" style="background-color: #f2f2f2;">
+        <div class="left_wrapper">
+          <img src="../static/media/vbmvm.jpg" alt="">
+        </div>
+        <div class="right_wrapper">
+          <h2>Guava</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque soluta cupiditate commodi natus obcaecati mollitia debitis repellat adipisci eum. Illo eveniet pariatur autem aut eligendi officia? Explicabo, magni aut!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem quaerat voluptates officia reiciendis, eum suscipit fugiat soluta vitae omnis maxime magni molestiae dolores cum mollitia provident assumenda vero eos!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, ad sequi magni unde id nisi! Incidunt rem ipsam earum suscipit, distinctio assumenda vitae porro officia, laboriosam tempora a neque voluptas!</p>
+        </div>
+      </div>
+
+      <div class="two_column_service">
+        
+        <div class="left_wrapper">
+          <h2>Sugarcane</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque soluta cupiditate commodi natus obcaecati mollitia debitis repellat adipisci eum. Illo eveniet pariatur autem aut eligendi officia? Explicabo, magni aut!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem quaerat voluptates officia reiciendis, eum suscipit fugiat soluta vitae omnis maxime magni molestiae dolores cum mollitia provident assumenda vero eos!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, ad sequi magni unde id nisi! Incidunt rem ipsam earum suscipit, distinctio assumenda vitae porro officia, laboriosam tempora a neque voluptas!</p>
+        </div>
+        <div class="right_wrapper">
+          <img src="../static/media/cbxcb.jpg" alt="">
+        </div>
+      </div>
+
+
+      <div class="two_column" style="background-color: #f2f2f2;">
+        <div class="left_wrapper">
+          <img src="../static/media/Adobe Scan 09-Apr-2023 (5)_1.jpg" alt="">
+        </div>
+        <div class="right_wrapper">
+          <h2>Sugarcane</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia atque soluta cupiditate commodi natus obcaecati mollitia debitis repellat adipisci eum. Illo eveniet pariatur autem aut eligendi officia? Explicabo, magni aut!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quidem quaerat voluptates officia reiciendis, eum suscipit fugiat soluta vitae omnis maxime magni molestiae dolores cum mollitia provident assumenda vero eos!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, ad sequi magni unde id nisi! Incidunt rem ipsam earum suscipit, distinctio assumenda vitae porro officia, laboriosam tempora a neque voluptas!</p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
